@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login -Chitrakuta</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <h1 class="logo">Chitrakuta</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="booking.html">Book</a></li>
+          <li><a href="login.html" class="active">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container" style="max-width: 400px; margin-top: 4em;">
+    <h2 style="text-align: center;">Login</h2>
+    <form id="loginForm">
+      <label>Email:</label>
+      <input type="email" required placeholder="Enter your email" /><br/>
+      <label>Password:</label>
+      <input type="password" required placeholder="Enter password" /><br/>
+      <button class="btn" type="submit">Login</button>
+    </form>
+  </section>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Login functionality will be handled from backend.");
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Now - Chitrakuta</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <h1 class="logo">Chitrakuta</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="booking.html" class="active">Book</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container" style="max-width: 500px; margin-top: 3em;">
+    <h2 style="text-align: center;">Book Your Event</h2>
+    <form id="bookingForm">
+      <label>Full Name:</label>
+      <input type="text" required placeholder="Your name" /><br/>
+      <label>Email:</label>
+      <input type="email" required placeholder="Your email" /><br/>
+      <label>Event Type:</label>
+      <select required>
+        <option>Wedding</option>
+        <option>Birthday</option>
+        <option>Corporate</option>
+        <option>Other</option>
+      </select><br/>
+      <label>Preferred Date:</label>
+      <input type="date" required /><br/>
+      <label>Additional Notes:</label>
+      <textarea rows="4" placeholder="Any special requests..."></textarea><br/>
+      <button class="btn" type="submit">Submit Booking</button>
+    </form>
+  </section>
+
+  <script>
+    document.getElementById("bookingForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Booking submitted! You'll receive a confirmation email.");
+    });
+  </script>
+</body>
+</html>
